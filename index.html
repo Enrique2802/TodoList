@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>To-Do List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>To-Do List</h1>
+<div class="container">
+    <h1>To Do list</h1>
 
-    <form>
-        <label for="task">New Task:</label>
-        <input type="text" id="task" name="task">
-        <button type="submit">Add</button>
-    </form>
+    <div class="input-group">
+        <input type="text" id="nouvelleTache" placeholder="Entrez une nouvelle tâche..." autocomplete="off">
+        <button id="ajouterBtn">Ajouter</button>
+    </div>
 
-    <h2>Tasks</h2>
-    <ul>
-        <li>Example task 1</li>
-        <li>Example task 2</li>
-        <li>Example task 3</li>
-    </ul>
-  <script src="script.js"></script>
+    <ul id="listeTaches"></ul>
+    <p id="messageVide" class="vide">Aucune tâche pour le moment. Ajoutez-en une !</p>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
+
